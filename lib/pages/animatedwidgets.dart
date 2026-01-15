@@ -7,7 +7,7 @@ class Animatedwidgets extends StatefulWidget {
   State<Animatedwidgets> createState() => _HomePageState();
 }
 
-class _HomePageState extends State<Animatedwidgetsgi> {
+class _HomePageState extends State<Animatedwidgets> {
   final double _initialMargin = 10;
   final double _initialHeight = 400;
   final double _initialWidth = 200;
