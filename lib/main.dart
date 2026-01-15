@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutteranimations/pages/HomePage.dart';
 import 'package:flutteranimations/pages/animatedwidgets.dart';
 import 'package:flutteranimations/pages/animatedwidgets.dart';
 import 'package:flutteranimations/pages/tweenanimation.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: Tweenanimation(),
+      home: Homepage(),
     );
   }
 }
