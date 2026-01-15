@@ -20,7 +20,8 @@ class _HomepageState extends State<Homepage> {
         navigationCard(context: context, title: "Tween Animation Page", destination: Tweenanimation()),
         navigationCard(context: context, title: "Hero Animation Page", destination: Heroanimation())
       ],
-    )),);
+    )),
+    );
   }
 }
 Widget navigationCard({
