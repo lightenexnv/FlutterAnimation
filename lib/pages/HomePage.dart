@@ -18,7 +18,22 @@ class _HomepageState extends State<Homepage> {
       children: [
         navigationCard(context: context, title: "Animated Widgets Page", destination: Animatedwidgets()),
         navigationCard(context: context, title: "Tween Animation Page", destination: Tweenanimation()),
-        navigationCard(context: context, title: "Hero Animation Page", destination: Heroanimation())
+        navigationCard(context: context, title: "Hero Animation Page", destination: Heroanimation()),
+        SizedBox(height: 20,),
+        GestureDetector(onTap: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context)=> Heroanimation()));
+        },
+        child: Hero(tag: "hero-image",
+            child: Container(height: 120,width: 120,
+            decoration: BoxDecoration(
+              color: Colors.blue,
+              borderRadius: BorderRadius.circular(16)
+            ),child: Icon(Icons.zoom_in,
+                color: Colors.white,
+                    size: 60,),
+              )
+        ),
+        )
       ],
     )),
     );
